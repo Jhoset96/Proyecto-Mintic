@@ -18,7 +18,7 @@ import com.mintic.tienda.entities.Usuario;
 import com.mintic.tienda.repositories.ITipoDocumento;
 import com.mintic.tienda.servicio.IUsuarioService;
 
-
+/*prueba push controlador 1*/
 /*@RestController permitir el manejo de solicitudes HTTP  get post put delete
  * */
 @RestController
