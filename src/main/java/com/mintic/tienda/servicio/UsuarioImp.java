@@ -39,7 +39,7 @@ public class UsuarioImp implements IUsuarioService {
 	@Override
 	public List<Usuario> getUsuarios() {
 
-		return (List<Usuario>) iUsuario.findAll();
+		return (List<Usuario>) iUsuario.findAll();/*este metodo tambien viene incluido en el comendo?*/
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class UsuarioImp implements IUsuarioService {
 
 		Usuario usuario = new Usuario();
 		TipoDocumento td = new TipoDocumento();
-		td.setId(usuarioDto.getIdTipoDocumento());
+		td.setId(usuarioDto.getIdTipoDocumento());/*queme traiga todos los id de donde sale espesificamente getIdTipoDocumento?*/
 				
 		if(usuarioDto.getId()!=null) {
 			usuario.setId(usuarioDto.getId());
@@ -59,7 +59,7 @@ public class UsuarioImp implements IUsuarioService {
 		usuario.setNombreUsuario(usuarioDto.getNombreUsuario());
 		usuario.setPassword(usuarioDto.getPassword());
 		usuario.setEmail(usuarioDto.getEmail());
-		return iUsuario.save(usuario);
+		return iUsuario.save(usuario);/*este metodo vine de la interfaz solamente ?*/
 	}
 
 

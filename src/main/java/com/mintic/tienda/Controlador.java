@@ -64,7 +64,7 @@ public class Controlador {
 	@GetMapping("/usuarios")
 	public List<Usuario> listarUsuarios() {
 
-		return iUsuario.getUsuarios();
+		return iUsuario.getUsuarios();/*de donde sale esl getUsuarios*/
 	}
 	/*@PathhVariable es el que reconoce esa variable*/
 	@GetMapping("/usuarios/{id}")
